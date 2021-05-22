@@ -1,0 +1,41 @@
+* HOME
+home__social
+https://www.linkedin.com/in/sahil-shende-0686711ab/
+https://www.instagram.com/sahils_world_/
+https://github.com/sasnitkkr/
+
+home__description
+a _____ student, web developer, Competetive Programmer
+
+
+* ABOUT
+about__description
+Hard Working College Student seeking internship. Bringing forth a motivated attitude and a set of powerful skills. Committed to utilizing my skills to further the mission of a company. 
+
+about__info-name
+Years <br> experience
+Completed <br> project
+Companies <br> worked
+
+
+* SKILLS
+services__modal-service
+Web Development (html,css,js,bootstrap, …)
+
+
+* PORTFOLIO
+portfolio__description
+Website adaptable to all devices, with ui components and animated interactions.
+
+
+* PROJECTS
+project__description
+Contact me now and get a 30% discount on your new project.
+
+
+
+* FOOTER
+footer__social
+https://www.linkedin.com/in/sahil-shende-0686711ab/
+https://www.instagram.com/sahils_world_/
+https://github.com/sasnitkkr/

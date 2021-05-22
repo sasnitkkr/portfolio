@@ -1,0 +1,19 @@
+header                            .header #header
+    nav                           .nav .container
+        a                         .nav__logo
+        div                       .nav__menu #nav-menu
+            ul                    .nav__list .grid
+                li                .nav__item
+                    a             .nav__link
+                    a
+                li
+            ul
+            crosshair            
+        div
+         
+        div                        .nav__btns
+            div                    .nav__toggle #nav-toggle
+            div
+        div
+    nav
+header

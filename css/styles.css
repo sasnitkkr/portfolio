@@ -13,16 +13,23 @@
 
     --hue-color: 250; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
-    /* HSL color mode */
+    /* Hue Saturation(gray/full-color) Lightness(black/white) color mode
+    https://www.w3schools.com/colors/colors_hsl.asp */
+
     --first-color: hsl(var(--hue-color), 69%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 57%, 53%);
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
+
     --title-color: hsl(var(--hue-color), 8%, 15%);
+
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
+
     --input-color: hsl(var(--hue-color), 70%, 96%);
+
     --body-color: hsl(var(--hue-color), 60%, 99%);
+
     --container-color: #fff;
 
     /* -------- Font and typography -------- */
@@ -58,13 +65,15 @@
     --z-modal: 1000;
 }
 
-/* Font size for large devices >968px */
+/* On screens that are >968px */
 @media screen and (min-width: 968px) {
     :root {
         --big-font-size: 3rem;
+
         --h1-font-size: 2.25rem;
         --h2-font-size: 1.5rem;
         --h3-font-size: 1.25rem;
+        
         --normal-font-size: 1rem;
         --small-font-size: .875rem;
         --smaller-font-size: .813rem;
@@ -105,7 +114,6 @@ h1, h2, h3, h4{
 
 ul{
     list-style: none;
-
 }
 
 a{
@@ -127,7 +135,7 @@ img{
 }
 
 .section__subtitle{
-    display: block;
+    display: block; /* takes whole width */
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-3);
 }
@@ -141,7 +149,7 @@ img{
 }
 .grid{
     display: grid;
-    gap: 1.5rem;
+    gap: 1.5rem; /* gap betn rows & cols */
 }
 .header{
     width: 100%;
@@ -152,7 +160,7 @@ img{
     background-color: var(--body-color);
 }
 
-/*==================== NAV ====================*/
+/* -------------- NAV ------------- */
 .nav{
     max-width: 968px;
     height:  var(--header-height);
@@ -161,11 +169,11 @@ img{
     align-items: center;
 }
 
+/* logo & apps */
 .nav__logo,
 .nav__toggle{
     color: var(--title-color);
     font-weight: var(--font-medium);
-
 }
 .nav__logo:hover{
     color: var(--first-color);
@@ -178,24 +186,33 @@ img{
 
 .nav__toggle:hover{
     color: var(--first-color);
-
 }
 
 @media screen and (max-width: 767px) {
     .nav__menu{
         position: fixed;
-        bottom: -100;
+        bottom: -100%;/* Hide menu at small Screen*/
         left: 0;
         width: 100%;
         background-color: var(--body-color);
         padding: 2rem 1.5rem 4rem;
         box-shadow: 0 -1px 4px rgb(0,0,0,.15);
         border-radius: 1.5rem 1.5rem 0 0;
-        transition: 0.3s;
+        transition: .3s;
     }
+    /* .nav__logo{
+        position: absolute;
+        top: 0;
+        left: 1rem;
+    } */
+    /* .nav__toggle{
+        position: absolute;
+        top: 0;
+        right: 1rem;
+    } */
 }
 
-.nav__list{
+ .nav__list{
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
@@ -209,18 +226,22 @@ img{
     font-weight: var(--font-medium);
 }
 
+/* on hover change color to theme color */
 .nav__link:hover{
     color: var(--first-color);
 }
-
+/* increase icon size */
 .nav__icon{
     font-size: 1.2rem;
 }
 
+/* cross-icon */
 .nav__close{
+    /* move bottom right wrt parent */
     position: absolute;
     right: 1.5rem;
     bottom: .5rem;
+
     font-size: 1.5rem;
     cursor: pointer;
     color: var(--first-color);
@@ -228,11 +249,12 @@ img{
 
 .nav__close:hover{
     color: var(--first-color-alt);
-
-}
+} 
 
 /* show menu */
-
+.show-menu{
+    bottom: 0;
+}
 
 /* Active link */
 
